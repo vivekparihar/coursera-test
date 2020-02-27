@@ -1,0 +1,158 @@
+/*For all elements======================================*/
+* {
+	box-sizing: border-box;
+	font-family: "comic sans ms";
+	margin: 0;
+}
+
+
+/*Heading======================================*/
+h1 {
+	text-align: center;
+	margin: 15px 0 15px 0;
+}
+
+/*Container Div for Relative Layout======================================*/
+div.container {
+	width: 100%;
+}
+
+
+/*12 Grid Responsive Layout Designing======================================*/
+
+div.row {
+	width: 100%;
+}
+
+/*For Paragraphs=========================================*/
+div.details {
+	border: 1px solid;
+	width: 90%;
+	height: 250px;
+	overflow: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+	text-align: justify;
+	position: relative;
+	padding-top: 50px;
+	margin-top: 15px;
+	margin-bottom: 5%;
+	background-color: #009999;
+	color: white; 
+}
+
+
+p.menu-heading {
+	width: 170px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	
+	border-left: 1px solid;
+	border-bottom: 1px solid;
+	font-size: 24px;
+	text-align: center;
+	padding: 2px;
+}
+
+p#chicken {
+	background-color: #ffcc00;
+	color: black;
+	text-shadow: 2px 2px 4px white;
+}
+
+p#beef {
+	background-color: #ff1a1a;
+	color: black;
+	text-shadow: 2px 2px 4px white;
+}
+
+p#sushi {
+	background-color: #cc00cc;
+	color: black;
+	text-shadow: 2px 2px 4px white;
+}
+/*For large devices*/
+
+@media (min-width: 1200px) {
+	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-12 {
+		float: left;
+	} 
+
+	.col-lg-1 {
+		width: 8.33%;
+	}
+
+	.col-lg-2 {
+		width: 16.66%;
+	}
+
+	.col-lg-3 {
+		width: 25%;
+	}
+
+	.col-lg-4 {
+		width: 33.33%;
+	}
+
+	.col-lg-5 {
+		width: 41.66%;
+	}
+
+	.col-lg-6 {
+		width: 50%;
+	}
+
+	.col-lg-12 {
+		width: 100%;
+	}
+}
+
+/*For medium devices*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-12 {
+		float: left;
+	} 
+
+	.col-md-1 {
+		width: 8.33%;
+	}
+
+	.col-md-2 {
+		width: 16.66%;
+	}
+
+	.col-md-3 {
+		width: 25%;
+	}
+
+	.col-md-4 {
+		width: 33.33%;
+	}
+
+	.col-md-5 {
+		width: 41.66%;
+	}
+
+	.col-md-6 {
+		width: 50%;
+	}
+
+	.col-md-12 {
+		width: 100%;
+	}
+
+	/*this media query is used to remove extra spaces at ends of column of size 12*/
+	.col-md-12 > div.details {
+	border: 1px solid;
+	width: 95%;
+	padding: 30px;
+	text-align: justify;
+	position: relative;
+	padding-top: 50px;
+	margin-bottom: 5%;	 
+}
+
+}
